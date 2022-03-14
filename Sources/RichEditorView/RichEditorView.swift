@@ -153,7 +153,7 @@ public class RichEditorWebView: WKWebView {
             let name = sp.first!
             let ext = sp.last!
 
-            if let url = Bundle.main.url(forResource: name, withExtension: ext, subdirectory: subdirectory) {
+            if let url = Bundle(for: RichEditorView.self).url(forResource: name, withExtension: ext, subdirectory: subdirectory) {
                 if #available(iOS 9.0, *) {
                     webView.loadFileURL(url, allowingReadAccessTo: url)
                 } else {
