@@ -120,7 +120,8 @@ public enum RichEditorDefaultOption: RichEditorOption {
         case .table: name = "insert_table"
         }
     
-        return UIImage(named: name)
+        let bundle = Bundle(for: RichEditorToolbar.self)
+        return UIImage(named: name, in: bundle, compatibleWith: nil)
     }
     
     public var title: String {
