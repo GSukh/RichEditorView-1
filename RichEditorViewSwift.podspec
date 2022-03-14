@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target  = '9.0'
   s.swift_version = '5.0'
   s.resources = [
-      'RichEditorView/Assets/icons/*',
-      'RichEditorView/Assets/editor/*'
+      'Sources/RichEditorView/Resources/icons/*',
+      'Sources/RichEditorView/Resources/editor/*'
     ]
 end
